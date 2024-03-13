@@ -1,0 +1,1 @@
+cores = choose(c_yellow,c_white,c_red,c_black)
