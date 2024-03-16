@@ -54,7 +54,7 @@ if (posso_diminuir){
 
 atirando = function()
 {
-	var fire = keyboard_check(vk_space)
+	var fire = keyboard_check(vk_space) 
 	
 	var y_tiro = y - sprite_height/3
 	
