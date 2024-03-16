@@ -1,5 +1,6 @@
 var altura_gui = display_get_gui_height()
 
+
 var multiplicador = 0
 var espaco = 40
 repeat(vida){

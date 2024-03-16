@@ -179,6 +179,10 @@
 	22.2 - Dando colisão entre o player e os inimigos - Feito
 	22.3 - Ajustando a transparencia do power up
 	22.4 - Melhorando a dispersao dos inimigos conforme o level
+	22.5 - Impedindo que o player crie mais de um escudo por vez
+		22.5.1 - Fazendo o player só criar o escudo SE o meu escudo for noone
+	22.6 - Impedindo que o player leve dano quando estiver com o escudo
+		22.6.1 - Fazendo o escudo avisar ao alvo dele que o meu_escudo do alvo dele é noone
 
 23 - Fazendo o player morrer - Feito
 	23.1 - Dando vida para o player - Feito
@@ -209,7 +213,8 @@
 	25.2 - Impedindo o player de sair da tela! - Feito
 	25.3 - Fazendo os inimigos droparem o item depois de certa posição - Feito
 	25.4 - Melhorando o sistema para ganhar level - Feito
-	25.5 - Ganhar pontos caso o player pegue o power up do tiro e já esteja no level máximo
+	25.5 - Ganhar pontos caso o player pegue o power up do tiro e já esteja no level máximo 
+	
 	
 26 - Boss!!
 	26.1 - Importando as sprites do boss - Feito
@@ -232,4 +237,4 @@
 	26.7 - Criando a vida do boss
 		26.7.1 - Iniciando a variável da vida - Feito
 		26.7.2 - Exibindo a vida do boss - Feito
-		26.7.3 - Fazendo o boss levar tiro
+		26.7.3 - Fazendo o boss levar tiro - Feito

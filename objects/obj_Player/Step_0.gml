@@ -8,11 +8,14 @@ right = keyboard_check(vk_right)
 y += (down - up) * velocidade;
 x += (right - left) * velocidade;
 
+
 atirando();
 rapido();
-//Verificar_Controle();
 escudoPlayer();
-debugs();
+
+
+//Verificar_Controle();
+//debugs();
 
 x = clamp(x,64,1856)
 y = clamp(y,64,1024)

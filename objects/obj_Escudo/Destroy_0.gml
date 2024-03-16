@@ -1,0 +1,1 @@
+alvo.meu_escudo = noone

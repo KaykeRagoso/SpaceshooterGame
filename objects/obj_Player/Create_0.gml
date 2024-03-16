@@ -2,34 +2,30 @@ velocidade = 5
 velocidade_maxima = 0
 
 posso_diminuir = true
-posso_escudo = true
+
 
 //Sistema de vida
 vida = 3
 
-escudos = 3
+
 
 espera_tiro = room_speed / 1;
 
 level_tiro = 1
 
+escudos = 3
+meu_escudo = noone
 
 escudoPlayer = function(){
-if (posso_escudo){
-		var shield = keyboard_check_pressed(ord("X"));
-		var shield_control = gamepad_button_check_pressed(0,gp_face2)
-		if (shield || shield_control && posso_diminuir && alarm[2] == -1 && escudos > 0){
-			escudos--;
-			posso_escudo = false
-			alarm[2] = 4 * room_speed
-			
-			var escudo = instance_create_layer(x,y,"Escudo",obj_Escudo)	
-	
-			escudo.alvo = id
-	
-			escudo.image_xscale = 1.25
-			escudo.image_yscale = 1.25
-		}
+	var _shield = keyboard_check_pressed(ord("X"));
+	if (_shield && escudos > 0 && !meu_escudo) && (posso_diminuir){
+		var escudo = instance_create_layer(x,y,"Escudo",obj_Escudo);
+		
+		escudo.alvo = id
+		
+		meu_escudo = escudo.id;
+		
+		escudos--;
 	}
 }
 
@@ -40,7 +36,7 @@ if (posso_diminuir){
 	var _rapido_controle = gamepad_button_check(0,gp_face1)
 	var _velocidade_max = 3
 	
-		if (_shift || _rapido_controle){
+		if (_shift || _rapido_controle) && (!meu_escudo){
 			
 			posso_diminuir = false
 			alarm[0] = 3 * room_speed;
@@ -64,7 +60,7 @@ atirando = function()
 	
 	var tiro_controle = gamepad_button_check(0,gp_face3)
 
-	if  (fire && posso_diminuir && alarm[1] == -1) || (tiro_controle && posso_diminuir && alarm[1] == -1){
+	if  (fire && posso_diminuir && alarm[1] == -1) && (!meu_escudo){
 			//Ativando o alarme
 			alarm[1] = espera_tiro;	
 
@@ -193,15 +189,17 @@ Verificar_Controle = function()
 ///@method perde_vida();
 perde_vida = function()
 {
-	if (vida > 1){
-		vida--	
+	if (!meu_escudo){
+		if (vida > 1){
+			vida--	
 		
-		screenshake(5)
+			screenshake(5)
 	
-	}else{
-		show_debug_message("O Player morreu :( ")
-		instance_destroy()	
-		screenshake(20)
+		}else{
+			show_debug_message("O Player morreu :( ")
+			instance_destroy()	
+			screenshake(20)
+		}
 	}
 }
 
