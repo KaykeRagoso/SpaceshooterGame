@@ -3,7 +3,7 @@ vida_max = 2000
 vida_atual = vida_max
 
 
-estado_atual = choose("estado 1","estado 2", "estado 3", "estado 4")
+estado_atual = choose("estado 5")
 
 delay_tiro = room_speed / 2;
 espera_tiro = 0;
@@ -82,3 +82,7 @@ estado_04 = function(){
 		espera_tiro = delay_tiro * tempo_delay;
 	}
 }	
+
+estado_05 = function(){
+	sprite_index = sprt_BossEscuro
+}

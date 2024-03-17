@@ -238,3 +238,17 @@
 		26.7.1 - Iniciando a variável da vida - Feito
 		26.7.2 - Exibindo a vida do boss - Feito
 		26.7.3 - Fazendo o boss levar tiro - Feito
+	26.8 - Criando o quinto estado do boss
+		26.8.1 - Importando a sprite
+		26.8.2 - Fazendo com que o boss tenha a sprite escura no quarto estado - Feito
+		26.8.3 - Fazendo o boss não levar dano no estado 5 - Feito
+		26.8.4 - Fazendo o boss ter a sprite original nos demais estados - Feito
+		26.8.5 - Criando o objeto minion do boss - Feito
+		26.8.6 - Criando o tiro do minion do boss - Feito
+		26.8.7 - Fazendo o minion atirar - Feito
+		26.8.8 - Fazendo o tiro do minion ir na direção do boss - Feito
+		26.8.9 - Fazendo o tiro do minion recuperar 5 de vida do boss
+		26.8.10 - Fazendo os minions iniciarem transparentes e depois ficarem visivel - Feito
+		26.8.11 - Fazendo os minions levarem tiros (perdendo 1 de vida)
+		26.8.12 - Dando 10 de vida para os minions
+		26.8.13 - Fazendo o minion morrer

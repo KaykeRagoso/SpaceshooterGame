@@ -8,7 +8,6 @@ posso_diminuir = true
 vida = 3
 
 
-
 espera_tiro = room_speed / 1;
 
 level_tiro = 1
