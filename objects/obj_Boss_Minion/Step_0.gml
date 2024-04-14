@@ -1,3 +1,9 @@
-if (image_alpha < 1){
+if (image_alpha < 1 && primeiro_tiro == false){
 	image_alpha += 1 / room_speed;	
 }
+
+if (escala > 1.25 or escala < 1){
+	aumento_escala *= -1;
+}
+
+escala += aumento_escala;

@@ -12,29 +12,14 @@ x += (right - left) * velocidade;
 atirando();
 rapido();
 escudoPlayer();
-
-
+sistema_tiro();
 //Verificar_Controle();
-//debugs();
+
 
 x = clamp(x,64,1856)
 y = clamp(y,64,1024)
 
-
-/*
-if (keyboard_check_pressed(vk_up)){
-	if (level_tiro < 5)
-	{
-		level_tiro++;	
-	}
-}
-if (keyboard_check_pressed(vk_down) && level_tiro > 1){
-		level_tiro--;	
-}
-
-if (keyboard_check_pressed(vk_left) && espera_tiro > 20){
-	espera_tiro *= .9
-}
-if (keyboard_check_pressed(vk_right)){
-	espera_tiro *= 1.1
-}*/
+show_debug_message(velocidade)
+show_debug_message(escudos)
+show_debug_message(espera_tiro)
+show_debug_message(level_tiro)

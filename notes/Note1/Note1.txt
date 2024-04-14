@@ -249,6 +249,29 @@
 		26.8.8 - Fazendo o tiro do minion ir na direção do boss - Feito
 		26.8.9 - Fazendo o tiro do minion recuperar 5 de vida do boss
 		26.8.10 - Fazendo os minions iniciarem transparentes e depois ficarem visivel - Feito
-		26.8.11 - Fazendo os minions levarem tiros (perdendo 1 de vida)
-		26.8.12 - Dando 10 de vida para os minions
-		26.8.13 - Fazendo o minion morrer
+		26.8.11 - Fazendo os minions levarem tiros (perdendo 1 de vida) - Feito
+		26.8.12 - Dando 10 de vida para os minions - Feito
+		26.8.13 - Fazendo o minion morrer - Feito
+		26.8.14 - Criando a explosão ao morrer
+		26.8.15 - Melhorando o feedback para o Player
+			26.8.15.1 - Fazendo ele ficar transparente conforme leva tiro - Feito
+			26.8.15.2 - Fazendo o valor do aumento escala subir - Feito
+		26.8.16 - Alterando os efeitos do minion
+			26.8.16.1 - Fazendo a escala aumentar e diminuir - Feito
+		26.8.17
+			26.8.17.1 - Criando os minions na posição correta
+			26.8.17.2 - Fazendo com que o minion cheque se foi criado em cima de outro - Feito
+			26.8.17.3 - Fazendo com que o boss só crie uma vez so minions no estado 4 - Feito
+			26.8.17.4 - Fazendo ele poder criar minion ao sair do estado 4 - Feito
+			26.8.17.5 - Fazendo com que ele possa chegar no estado 4 SE a vida atual for menor do que ou igual a metade da vida total - Feito
+			26.8.17.6 - Fazendo os tiros dos minions seguir o boss no step - Feito
+		26.8.18 - Criar o método do estado 4 - Feito
+		26.8.19 - Fazendo ele ir lentamente para o meio da tela - Feito
+	26.9 - Criar o método de troca estado - Feito
+27.1 - Animação da cehgada do boss
+	27.1 - Importando as sprites - Feito
+	27.2 - Criando a animação - Feito
+	27.3 - Destruindo a sequence ao final da animação - Feito
+	27.4 - Criando o boss depois de destruir a sequence - Feito
+	
+28 - Animação da morte do boss

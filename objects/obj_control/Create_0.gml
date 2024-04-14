@@ -27,9 +27,6 @@ ganha_pontos = function(_pontos)
 		
 		proximo_level *= 2;
 		
-		
-		
-		
 	}
 }
 

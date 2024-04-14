@@ -7,7 +7,6 @@ posso_diminuir = true
 //Sistema de vida
 vida = 3
 
-
 espera_tiro = room_speed / 1;
 
 level_tiro = 1
@@ -112,12 +111,12 @@ tiro4 = function(){
 		direcao += 15
 	}
 }
-
 ///@method level_up(chance)
 level_up = function(_chance)
 {
 	if (_chance >= 90)
 	{
+		show_debug_message("Tiro Melhorado")
 		//Aumentando o level do tiro SE o level do tiro for menor do que 5
 		if (level_tiro < 5)
 		{
@@ -127,6 +126,7 @@ level_up = function(_chance)
 		}
 	}
 	else if(_chance >= 60){
+		show_debug_message("Tiro mais rapido")
 		//Checando se a espera do tiro é maior do que 20
 		if(espera_tiro > 20){
 			//Diminuindo a espera do tiro em 10%
@@ -137,6 +137,7 @@ level_up = function(_chance)
 	}
 	else if (_chance >= 30)
 	{
+		show_debug_message("Velocidade de movimento aumentada")
 		//Aumentando a velocidade me 0.5 SE ela for menor do que 10
 		if(velocidade < 10)
 		{
@@ -147,12 +148,30 @@ level_up = function(_chance)
 			ganhando_pontos(5)	
 		}
 	}else{
+		show_debug_message("Mais escudo")
 		if(escudos < 3){
 			escudos++;	
 		}else{
 			ganhando_pontos(1)	
 		}
 	}
+}
+
+sistema_tiro = function(){
+	
+	var _levelMais = keyboard_check_pressed(ord("W"))
+	var _levelMenos = keyboard_check_pressed(ord("S"))
+	
+	if (_levelMais) level_tiro++;
+	if (_levelMenos) level_tiro--;
+	
+	if (level_tiro > 5){
+		level_tiro = 5	
+	}else if (level_tiro <= 0){
+		level_tiro = 1	
+	}
+	
+	show_debug_message(level_tiro)	
 }
 
 Verificar_Controle = function()
@@ -204,10 +223,5 @@ perde_vida = function()
 
 debugs = function()
 {
-	var _levelMais = keyboard_check_pressed(ord("W"))
-	var _levelMenos = keyboard_check_pressed(ord("S"))
-	
-	if (_levelMais) level_tiro++;
-	if (_levelMenos) level_tiro--;
 	
 }
