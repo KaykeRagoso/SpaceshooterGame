@@ -1,20 +1,21 @@
 //Randomizando o jogo
 randomize();
 
-alarm[0] = room_speed;
 
 //Iniciando o sistema de pontos
 pontos = 0;
 
-level = 1
+level = 11;
 
 proximo_level = 100;
 
-
+criar_boss = true;
 //Variavel de controle para o Game Over
 gameover_seq = noone;
 
+level_completo = false
 
+alarm[0] = room_speed;
 //Criando um método para ganhar pontos
 ///@method ganha_pontos(pontos)
 ganha_pontos = function(_pontos)

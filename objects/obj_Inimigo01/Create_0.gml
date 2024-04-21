@@ -28,6 +28,6 @@ dropa_item = function(_chance){
 	
 	if (valor < _chance && y > 96)
 	{
-		instance_create_layer(x,y,"Tiros",obj_PowerUp)
+		instance_create_layer(x,y,"Inimigos",obj_PowerUp)
 	}
 }

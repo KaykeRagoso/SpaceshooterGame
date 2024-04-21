@@ -1,7 +1,8 @@
-show_debug_message(estado_atual)
+y = 224
+//show_debug_message(estado_atual)
 
 if (keyboard_check(vk_enter)) vida_atual -= 10
-show_debug_message(vida_atual)
+//show_debug_message(vida_atual)
 
 troca_estado();
 	

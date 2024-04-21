@@ -268,10 +268,23 @@
 		26.8.18 - Criar o método do estado 4 - Feito
 		26.8.19 - Fazendo ele ir lentamente para o meio da tela - Feito
 	26.9 - Criar o método de troca estado - Feito
-27.1 - Animação da cehgada do boss
+27.1 - Animação da cehgada do boss - 960,512
 	27.1 - Importando as sprites - Feito
 	27.2 - Criando a animação - Feito
 	27.3 - Destruindo a sequence ao final da animação - Feito
 	27.4 - Criando o boss depois de destruir a sequence - Feito
 	
 28 - Animação da morte do boss
+	28.1 - Deixando a animação com 10 segundos - Feito
+	28.2 - Criando várias explosões pelo boss - Feito
+	28.3 - Fazendo o boss cair da tela até sumir - Feito
+29 - Fazer o control criar o boss quando ele chegar no level 10
+	29.1 - Criando inimigos se eu ainda não estou no level 10 - Feito
+	29.2 - Criando o boss se eu estou no level 10 - Feito
+	29.3 - Garantindo que eu só vou criar o boss uma única vez - Feito
+30 - Criando animação de termino de level do player
+	30.1 - Criar a animação - Feito
+	30.2 - Quando o boss morrer e a animação de morte dele acabar criar a animação do player na posição do player
+		30.2.1 - Criar a função que executa a sequencia do player
+		30.2.2 - Fazendo ele excutar a função ao terminar a animação
+	30.3 - Destruir o player e garantir que obj control NÂO vai achar que o jogador perdeu

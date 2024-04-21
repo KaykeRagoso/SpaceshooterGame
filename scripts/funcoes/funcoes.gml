@@ -22,3 +22,17 @@ function destro_seq()
 	
 	instance_create_layer(960,256,"Boss",obj_Boss)
 }
+
+function cria_seq()
+{
+	if (instance_exists(obj_Player)){
+		
+		layer_sequence_create("Sequences",obj_Player.x,obj_Player.y,sq_level_end);
+		
+		instance_destroy(obj_Player,false);
+		
+		if (instance_exists(obj_control)){
+			obj_control.level_completo = true	
+		}
+	}
+}

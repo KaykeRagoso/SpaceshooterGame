@@ -5,7 +5,7 @@ posso_diminuir = true
 
 
 //Sistema de vida
-vida = 3
+vida = 10
 
 espera_tiro = room_speed / 1;
 
@@ -171,7 +171,7 @@ sistema_tiro = function(){
 		level_tiro = 1	
 	}
 	
-	show_debug_message(level_tiro)	
+	//show_debug_message(level_tiro)	
 }
 
 Verificar_Controle = function()
@@ -219,9 +219,4 @@ perde_vida = function()
 			screenshake(20)
 		}
 	}
-}
-
-debugs = function()
-{
-	
 }
