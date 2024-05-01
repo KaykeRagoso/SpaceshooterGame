@@ -5,7 +5,7 @@ randomize();
 //Iniciando o sistema de pontos
 pontos = 0;
 
-level = 11;
+level = 1;
 
 proximo_level = 100;
 

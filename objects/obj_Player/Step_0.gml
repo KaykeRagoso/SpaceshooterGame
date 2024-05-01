@@ -14,8 +14,15 @@ rapido();
 escudoPlayer();
 sistema_tiro();
 
+
 //Verificar_Controle();
 
 
 x = clamp(x,64,1856)
 y = clamp(y,64,1024)
+
+show_debug_message(velocidade)
+show_debug_message(level_tiro)
+show_debug_message(espera_tiro)
+show_debug_message(velocidade)
+show_debug_message(escudos)

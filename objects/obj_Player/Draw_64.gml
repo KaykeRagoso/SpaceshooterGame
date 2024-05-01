@@ -1,4 +1,3 @@
-
 var altura_gui = display_get_gui_height()
 
 

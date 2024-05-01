@@ -5,7 +5,7 @@ posso_diminuir = true
 
 
 //Sistema de vida
-vida = 10
+vida = 3
 
 espera_tiro = room_speed / 1;
 
@@ -117,6 +117,7 @@ level_up = function(_chance)
 	if (_chance >= 90)
 	{
 		show_debug_message("Tiro Melhorado")
+		show_debug_message("Pegou Tiro")
 		//Aumentando o level do tiro SE o level do tiro for menor do que 5
 		if (level_tiro < 5)
 		{
@@ -144,6 +145,7 @@ level_up = function(_chance)
 			var _pontocinco = .5
 			velocidade += _pontocinco;	
 			velocidade_maxima += _pontocinco;	
+			
 		}else{
 			ganhando_pontos(5)	
 		}
