@@ -3,7 +3,6 @@ velocidade_maxima = 0
 
 posso_diminuir = true
 
-//Teste de Repositorio
 //Sistema de vida
 vida = 3
 
